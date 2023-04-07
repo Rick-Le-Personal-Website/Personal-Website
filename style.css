@@ -1,19 +1,15 @@
 /* styling main h1 header */
-h1 {
+.h1 {
     color: rgb(255, 255, 255);
     text-align: center;
-}
-{
     position: absolute;
     right: 0px;
     width: 200px;
     height: 120px;
     border: 3px solid green;
-  }  
+}
 
-  
-
-body {
+.body {
     background-image: url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700178773-optimized.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -39,7 +35,7 @@ body {
     text-decoration: none;
   }
   
-  h1.ml8 {
+  .h1.ml8 {
     font-weight: 900;
     font-size: 4.5em;
     color: #fff;
@@ -47,7 +43,7 @@ body {
     height: 3em;
   }
   
-  .ml8 .letters-container {
+  .container {
     position: absolute;
     left: 0;
     right: 0;
@@ -57,7 +53,7 @@ body {
     height: 1em;
   }
   
-  .ml8 .letters {
+  .ml8.letters {
     position: relative;
     z-index: 2;
     display: inline-block;
@@ -66,13 +62,13 @@ body {
     top: -0.2em;
   }
   
-  .ml8 .bang {
+  .ml8.bang {
     font-size: 1.4em;
     top: auto;
     left: -0.06em;
   }
   
-  .ml8 .circle {
+  .ml8.circle {
     position: absolute;
     left: 0;
     right: 0;
@@ -81,14 +77,14 @@ body {
     bottom: 0;
   }
   
-  .ml8 .circle-white {
+  .ml8.circle-white {
     width: 3em;
     height: 3em;
     border: 2px dashed white;
     border-radius: 2em;
   }
   
-  .ml8 .circle-dark {
+  .ml8.circle-dark {
     width: 2.2em;
     height: 2.2em;
     background-color: #4f7b86;
@@ -96,10 +92,62 @@ body {
     z-index: 1;
   }
   
-  .ml8 .circle-dark-dashed {
+  .ml8.circle-dark-dashed {
     border-radius: 2.4em;
     background-color: transparent;
     border: 2px dashed #4f7b86;
     width: 2.3em;
     height: 2.3em;
   }
+  
+	.body {
+		  background-image: url('file:///C:/Users/lrck/Downloads/anime.jpg');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: 100% 100%;
+		}
+
+        .container {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+		
+
+          * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+          }
+          
+          body {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+          }
+          .waviy {
+            position: relative;
+          }
+          .waviy span {
+            position: relative;
+            display: inline-block;
+            font-size: 40px;
+            color: #fff;
+            text-transform: uppercase;
+            animation: flip 2s infinite;
+            animation-delay: calc(.2s * var(--i))
+          }
+          @keyframes flip {
+            0%,80% {
+              transform: rotateY(360deg) 
+            }
+          }
+
+          h1 {
+            text-align: center;
+            margin-top: 50px; /* adjust this value as needed */
+          }
+          
