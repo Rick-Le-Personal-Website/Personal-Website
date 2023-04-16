@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      body {
+        background-image: url("Pictures/anime.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      .waviy {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" alt="Home">Home</a></li>
+          <li><a href="about.html" alt="About">About</a></li>
+          <li><a href="portfolio.html" alt="Portfolio">Portfolio</a></li>
+          <li><a href="Contact.html" alt="Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form action="" method="get" class="form">
+      <div class="form">
+        <label for="name">Enter your name: </label>
+        <input type="name" name="name" id="name" required />
+      </div>
+      <div class="form">
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="form" id="message">
+        <label for="message">Message: </label>
+        <input type="message" name="message" id="message" required />
+      </div>
+      <div class="form">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>

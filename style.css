@@ -150,4 +150,27 @@
             text-align: center;
             margin-top: 50px; /* adjust this value as needed */
           }
-          
+
+          form {
+            display: grid;
+            gap: 1rem;
+            font-size: 1rem;
+            color:rgb(255, 255, 255);
+            width: 50%;
+        }
+        
+        label{
+            display: grid;
+        }
+        
+        input{
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #message{
+          height: 4rem;
+          margin-bottom: 1rem;
+        }
